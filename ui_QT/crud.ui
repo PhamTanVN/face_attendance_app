@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrudPage</class>
+ <widget class="QWidget" name="CrudPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản Lý Học Sinh</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f4f7f6;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>15</number>
+   </property>
+   <property name="topMargin">
+    <number>15</number>
+   </property>
+   <property name="rightMargin">
+    <number>15</number>
+   </property>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_back">
+       <property name="text">
+        <string>⬅ QUAY LẠI</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #637081; color: white; font-weight: bold; padding: 12px 18px; border-radius: 10px; font-size: 16px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="search_input">
+     <property name="placeholderText">
+      <string>🔍 Tìm kiếm tên học sinh để sửa hoặc xoá...</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 14px; font-size: 18px; border: 2px solid #065279;
+            border-radius: 10px; color: black; background-color: white; margin-bottom: 4px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="input_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: white; border-radius: 10px;</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>15</number>
+      </property>
+      <property name="topMargin">
+       <number>15</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="name_input">
+        <property name="placeholderText">
+         <string>Tên học sinh</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 12px; border: 1px solid #ccc; border-radius: 8px; color: black; font-size: 16px;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="class_input">
+        <property name="placeholderText">
+         <string>Lớp</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 12px; border: 1px solid #ccc; border-radius: 8px; color: black; font-size: 16px;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="btn_add">
+        <property name="text">
+         <string>➕ THÊM</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+                background-color: #065279; color: white; font-weight: bold;
+                padding: 14px 16px; border-radius: 10px; font-size: 16px;
+            }
+            QPushButton:hover { background-color: #086ca1; }</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="btn_edit">
+        <property name="text">
+         <string>✏️ SỬA</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+                background-color: #065279; color: white; font-weight: bold;
+                padding: 14px 16px; border-radius: 10px; font-size: 16px;
+            }
+            QPushButton:hover { background-color: #086ca1; }</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="btn_del">
+        <property name="text">
+         <string>🗑️ XOÁ</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+                background-color: #c0392b; color: white; font-weight: bold;
+                padding: 14px 16px; border-radius: 10px; font-size: 16px;
+            }
+            QPushButton:hover { background-color: #e74c3c; }</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="btn_face">
+        <property name="text">
+         <string>📷 CHỤP MẶT</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+                background-color: #065279; color: white; font-weight: bold;
+                padding: 14px 16px; border-radius: 10px; font-size: 16px;
+            }
+            QPushButton:hover { background-color: #086ca1; }</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="btn_time">
+        <property name="text">
+         <string>⏰ KHUNG GIỜ</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+                background-color: #e67e22; color: white; font-weight: bold;
+                padding: 14px 16px; border-radius: 10px; font-size: 16px;
+            }
+            QPushButton:hover { background-color: #f39c12; }</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="table">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget { background-color: white; color: black; gridline-color: #eee; }
+            QHeaderView::section { background-color: #065279; color: white; font-weight: bold; height: 42px; }</string>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>100</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tên</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Lớp</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Đúng giờ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Muộn</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Khung giờ</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="history_header">
+     <property name="text">
+      <string>🕒 LỊCH SỬ HOẠT ĐỘNG</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 24px; font-weight: bold; color: #065279; margin: 10px 0 8px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="history_table">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget { background-color: white; color: black; gridline-color: #eee; }
+            QHeaderView::section { background-color: #065279; color: white; font-weight: bold; height: 42px; }</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Thời gian</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Hành động</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Chi tiết</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <widget class="QFrame" name="notif_panel">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>-100</y>
+     <width>400</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #27ae60; border: 2px solid white; border-radius: 15px;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="notif_label">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white; font-weight: bold; font-size: 16px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

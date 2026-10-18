@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatisticsPage</class>
+ <widget class="QWidget" name="StatisticsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>THỐNG KÊ ĐI HỌC MUỘN</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>15</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="title_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: #065279; border-radius: 10px; padding: 10px;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="title_label">
+        <property name="styleSheet">
+         <string notr="true">color: white; font-weight: bold; font-size: 16px;</string>
+        </property>
+        <property name="text">
+         <string>📊 HỆ THỐNG THỐNG KÊ ĐI MUỘN</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabs">
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::panel { border: 2px solid white; border-radius: 8px; background-color: white; }
+            QTabBar::tab {
+                background-color: #e0e0e0; 
+                color: black; 
+                font-weight: bold; 
+                font-size: 14px;
+                padding: 12px 25px; 
+                border-top-left-radius: 6px; 
+                border-top-right-radius: 6px;
+                border: 1px solid #065279;
+                border-bottom: none;
+                margin-right: 2px;
+            }
+            QTabBar::tab:selected { 
+                background-color: white; 
+                color: black; 
+                border: 2px solid #065279;
+                border-bottom: none;
+            }</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_all_school">
+      <attribute name="title">
+       <string>🏫 TOÀN TRƯỜNG (THEO LỚP)</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="info_label">
+         <property name="styleSheet">
+          <string notr="true">font-size: 15px; font-weight: bold; color: black;</string>
+         </property>
+         <property name="text">
+          <string>Tổng số buổi đi muộn phân bổ theo các lớp:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="chart_all" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_by_class">
+      <attribute name="title">
+       <string>👥 CHI TIẾT TỪNG LỚP (THEO HỌC SINH)</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="select_label">
+           <property name="styleSheet">
+            <string notr="true">font-size: 15px; font-weight: bold; color: black;</string>
+           </property>
+           <property name="text">
+            <string>Chọn lớp học muốn xem:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="class_combo">
+           <property name="styleSheet">
+            <string notr="true">QComboBox { padding: 8px; font-size: 14px; border: 2px solid #065279; border-radius: 5px; min-width: 150px; background: white; color: black; }
+            QComboBox QAbstractItemView { color: black; background: white; selection-background-color: #065279; selection-color: white; }</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QWidget" name="chart_class" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendancePage</class>
+ <widget class="QWidget" name="AttendancePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Hệ Thống Điểm Danh</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #065279;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="top_bar">
+     <item>
+      <widget class="QPushButton" name="btn_back">
+       <property name="text">
+        <string>⬅ QUAY LẠI</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #637081; color: white; font-weight: bold; padding: 12px 18px; border-radius: 10px; font-size: 16px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="cam_container">
+     <property name="styleSheet">
+      <string notr="true">background-color: black; border: 4px solid white; border-radius: 15px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="info_frame">
+     <property name="fixedHeight">
+      <number>95</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0.9); border-radius: 15px;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="status_label">
+        <property name="text">
+         <string>🔍 ĐANG CHỜ QUÉT KHUÔN MẶT...</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #7f8c8d; font-size: 20px; font-weight: bold;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <widget class="QFrame" name="guide_notif_panel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>-120</y>
+     <width>400</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #3498db;
+            border: 3px solid white;
+            border-radius: 20px;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="guide_notif_label">
+      <property name="text">
+       <string>📷 HÃY HƯỚNG KHUÔN MẶT VÀO CAMERA!</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white; font-weight: bold; font-size: 18px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="notif_panel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>-120</y>
+     <width>400</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #e74c3c;
+            border: 3px solid white;
+            border-radius: 20px;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QLabel" name="notif_label">
+      <property name="text">
+       <string>HỌC SINH ĐI MUỘN!</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white; font-weight: bold; font-size: 20px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

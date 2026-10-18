@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.vscode/
+.env
+data/
+x.npy
+y.npy

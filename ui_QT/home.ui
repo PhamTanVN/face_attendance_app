@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePage</class>
+ <widget class="QWidget" name="HomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ĐIỂM DANH</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e9f0f2;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>40</number>
+   </property>
+   <property name="topMargin">
+    <number>30</number>
+   </property>
+   <property name="rightMargin">
+    <number>40</number>
+   </property>
+   <property name="bottomMargin">
+    <number>30</number>
+   </property>
+   <property name="spacing">
+    <number>18</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="title_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: #0b4f6c; border-radius: 20px; padding: 16px;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="title">
+        <property name="text">
+         <string>HỆ THỐNG ĐIỂM DANH NHẬN DIỆN KHUÔN MẶT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white; font-size: 30px; font-weight: bold;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_shutdown">
+       <property name="text">
+        <string>⏻ TẮT</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #7f1d1d; color: white; font-weight: bold; padding: 14px 20px; border-radius: 12px; font-size: 18px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btn_att">
+       <property name="text">
+        <string>📸 BẮT ĐẦU ĐIỂM DANH</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+                background-color: #0b4f6c;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 16px;
+                padding: 24px;
+                min-height: 86px;
+            }
+            QPushButton:hover { background-color: #0f6c91; }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn_list">
+       <property name="text">
+        <string>📋 DANH SÁCH HỌC SINH</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+                background-color: #0b4f6c;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 16px;
+                padding: 24px;
+                min-height: 86px;
+            }
+            QPushButton:hover { background-color: #0f6c91; }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btn_crud">
+       <property name="text">
+        <string>⚙️ QUẢN LÝ DỮ LIỆU</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+                background-color: #0b4f6c;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 16px;
+                padding: 24px;
+                min-height: 86px;
+            }
+            QPushButton:hover { background-color: #0f6c91; }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btn_stats">
+       <property name="text">
+        <string>📊 THỐNG KÊ MUỘN</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+                background-color: #0b4f6c;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 16px;
+                padding: 24px;
+                min-height: 86px;
+            }
+            QPushButton:hover { background-color: #0f6c91; }</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="pin_button_layout">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_open_pin">
+       <property name="text">
+        <string>🔒 CÀI ĐẶT PIN</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1f6f4e; color: white; font-weight: bold; padding: 14px 18px; border-radius: 12px; font-size: 18px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <widget class="QFrame" name="pin_panel">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>200</y>
+     <width>540</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+                background-color: #071622;
+                border: 3px solid #ffffff;
+                border-radius: 24px;
+            }</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="leftMargin">
+     <number>24</number>
+    </property>
+    <property name="topMargin">
+     <number>22</number>
+    </property>
+    <property name="rightMargin">
+     <number>24</number>
+    </property>
+    <property name="bottomMargin">
+     <number>22</number>
+    </property>
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="pin_title">
+      <property name="text">
+       <string>ĐỔI MÃ PIN QUẢN LÝ</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white; font-size: 22px; font-weight: bold;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="pin_status">
+      <property name="text">
+       <string>Mật khẩu cũ và mới sẽ được nhập ở khung dưới.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #d5e6f0; font-size: 14px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="old_pin_input">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Mật khẩu cũ</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+                background: #ffffff;
+                color: #000000;
+                border: 2px solid #6fa7c3;
+                border-radius: 12px;
+                padding: 14px;
+                font-size: 18px;
+            }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="new_pin_input">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Mật khẩu mới</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+                background: #ffffff;
+                color: #000000;
+                border: 2px solid #6fa7c3;
+                border-radius: 12px;
+                padding: 14px;
+                font-size: 18px;
+            }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_apply_pin">
+        <property name="text">
+         <string>✅ ÁP DỤNG</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #1f6f4e; color: white; font-weight: bold; padding: 12px 16px; border-radius: 12px; font-size: 16px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_cancel_pin">
+        <property name="text">
+         <string>⬅ QUAY LẠI</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #7f8c8d; color: white; font-weight: bold; padding: 12px 16px; border-radius: 12px; font-size: 16px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

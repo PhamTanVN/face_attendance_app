@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PinDialog</class>
+ <widget class="QDialog" name="PinDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Xác nhận PIN</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+                background-color: white;
+            }
+            QFrame#container {
+                background-color: #091722;
+                border: 2px solid #ffffff;
+                border-radius: 24px;
+            }
+            QLineEdit {
+                background: #ffffff;
+                color: #000000;
+                border: 2px solid #9ec3d5;
+                border-radius: 12px;
+                padding: 16px 14px;
+                font-size: 20px;
+            }</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QFrame" name="container">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#container {
+                background-color: #091722;
+                border: 2px solid #ffffff;
+            }</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>28</number>
+    </property>
+    <property name="topMargin">
+     <number>24</number>
+    </property>
+    <property name="rightMargin">
+     <number>28</number>
+    </property>
+    <property name="bottomMargin">
+     <number>24</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="title_label">
+      <property name="styleSheet">
+       <string notr="true">color: white; font-size: 24px; font-weight: bold; background-color: #091722;</string>
+      </property>
+      <property name="text">
+       <string>Khóa quản lý</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="subtitle_label">
+      <property name="styleSheet">
+       <string notr="true">color: #dbe6ec; font-size: 16px; background-color: #091722;</string>
+      </property>
+      <property name="text">
+       <string>Nhập mã PIN để tiếp tục:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="pin_input">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+                background: #ffffff;
+                color: #000000;
+                border: 2px solid #9ec3d5;
+                border-radius: 12px;
+                padding: 16px 14px;
+                font-size: 20px;
+            }</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Nhập mã PIN</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="styleSheet">
+       <string notr="true">color: #ffd6d6; font-size: 14px; font-weight: bold; background-color: #091722;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="btn_row">
+      <item>
+       <widget class="QPushButton" name="cancel_btn">
+        <property name="styleSheet">
+         <string notr="true">background-color: #7f8c8d; color: white; font-weight: bold; padding: 14px 22px; border-radius: 12px; font-size: 16px;</string>
+        </property>
+        <property name="text">
+         <string>⬅ QUAY LẠI</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ok_btn">
+        <property name="styleSheet">
+         <string notr="true">background-color: #1f6f4e; color: white; font-weight: bold; padding: 14px 22px; border-radius: 12px; font-size: 16px;</string>
+        </property>
+        <property name="text">
+         <string>✅ XÁC NHẬN</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

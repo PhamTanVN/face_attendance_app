@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FaceCaptureDialog</class>
+ <widget class="QDialog" name="FaceCaptureDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chụp ảnh khuôn mặt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #0a2232;</string>
+  </property>
+  <layout class="QVBoxLayout" name="main_layout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>14</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="cam_label">
+     <property name="minimumHeight">
+      <number>560</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: black; border: 4px solid white; border-radius: 16px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="status_label">
+     <property name="text">
+      <string>📷 Hãy đặt mặt vào khung camera rồi nhấn CHỤP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white; font-size: 22px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="btn_row">
+     <item>
+      <widget class="QPushButton" name="btn_back">
+       <property name="text">
+        <string>⬅ QUAY LẠI</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #637081; color: white; font-weight: bold; padding: 16px 20px; border-radius: 12px; font-size: 18px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_capture">
+       <property name="text">
+        <string>📸 CHỤP MẶT</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #1f6f4e; color: white; font-weight: bold; padding: 16px 20px; border-radius: 12px; font-size: 20px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
